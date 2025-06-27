@@ -1,0 +1,42 @@
+This is initial Android 16 with June 2025 security patches
+
+Notes:
+==============================
+- Install a HyperOS 2 FW according to your region (https://xmfirmwareupdater.com/firmware/marble)
+- LineageOS-based source. Signed build.
+- Use OFRP-R11.1_7-Beta-marble.zip as recovery.
+- Clean flash is required if coming from March 2024 or older builds.
+- Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
+- Install this (https://sourceforge.net/projects/evolution-x/files/marble/15/Evo-10.x-5.10.236-KSU-Next-susfs.zip/download) for root.
+- Includes POCO camera, Dolby Vision and Dolby Atmos.
+- Credits to Arian16k, GR, Chaitanya, Adrianyyyy.
+
+Device changes:
+==============================
+Update blobs and firmware from OS2.0.5.0.VMRMIXM
+fix auto brightness after screen turn on
+overlay: Configure number of physical SIM slots
+parts: Drop PowerTools
+parts: Revert per-app thermal profile rework
+
+Notable ROM changes:
+==============================
+Adapt FaceUnlock to 16
+Disable some theme styles for A16
+Evolver: Allow user to provide keybox data
+Evolver: Bring back PIF
+Evolver: Drop some features for A16
+Evolver: Power menu: Drop On-The-Go Mode
+Evolver: Disable theme prefs
+GameSpace: Drop getIsContentSecure
+Initial Android 16 release
+LineageParts: Do not restore keydisabler state at boot
+Settings: add back theming from dev settings into display settings
+Settings: fix StorageSelectionPreferenceController crash
+Settings: handle non-TextView layouts in storage spinner adapter
+SystemUIClocks: Update to panther A16 BP2A.250605.031.A2
+Update BCR to Version 1.78
+Updater: Fix background color
+Updater: Set User-Agent to EvoXUpdater/1.0
+bcr: add vendor/bcr to PRODUCT_SOONG_NAMESPACES
+fonts: Update from komodo BP2A.250605.031.A2
