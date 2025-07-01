@@ -1,4 +1,4 @@
-This is initial Android 16 with June 2025 security patches
+This is Android 16 with June 2025 security patches
 
 Notes:
 ==============================
@@ -13,30 +13,30 @@ Notes:
 
 Device changes:
 ==============================
-Update blobs and firmware from OS2.0.5.0.VMRMIXM
-fix auto brightness after screen turn on
-overlay: Configure number of physical SIM slots
-parts: Drop PowerTools
-parts: Revert per-app thermal profile rework
+Add BT LE audio props
+Fix per-app thermals
+Update blobs from diting OS2.0.3.0.VLFMIXM
 
 Notable ROM changes:
 ==============================
-Adapt FaceUnlock to 16
-Disable some theme styles for A16
-Evolver: Allow user to provide keybox data
-Evolver: Bring back PIF
-Evolver: Drop some features for A16
-Evolver: Power menu: Drop On-The-Go Mode
-Evolver: Disable theme prefs
-GameSpace: Drop getIsContentSecure
-Initial Android 16 release
-LineageParts: Do not restore keydisabler state at boot
-Settings: add back theming from dev settings into display settings
-Settings: fix StorageSelectionPreferenceController crash
+Bring back theme styles to Evolver
+Disable night light when showing udfps overlay
+InsetsStateController: Replace ArrayMap usage with Hashmap
+Media: Limit Max album artwork bitmap size
+Settings: Allow showing Ambient instead of fully waking
+Settings: Apply expressive design to evolver icon
+Settings: NfcAndPaymentFragmentController: fix crash
 Settings: handle non-TextView layouts in storage spinner adapter
-SystemUIClocks: Update to panther A16 BP2A.250605.031.A2
-Update BCR to Version 1.78
-Updater: Fix background color
-Updater: Set User-Agent to EvoXUpdater/1.0
-bcr: add vendor/bcr to PRODUCT_SOONG_NAMESPACES
-fonts: Update from komodo BP2A.250605.031.A2
+SettingsLib: Ensure divider is set before view is returned in onCreateView
+ShortcutService: stop spam
+SystemUI: Bring back Smartspace
+SystemUI: Fix smartspace layout
+SystemUI: Fix up large clock top margin with pixel-fw
+SystemUI: Improve ripple animation color
+SystemUI: Map more custom QS tiles
+SystemUI: add logic for mapping unknown tiles
+SystemUI: biometrics: Add missing calls to parent onFinishInflate
+SystemUI: disable media control guts marquee effect
+SystemUI: fix keyguard media section placement when split shade is used
+SystemUI: fix squeeze effect crash
+fwb: stop some more warning spam
