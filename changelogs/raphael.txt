@@ -1,0 +1,47 @@
+This is initial Android 16 with June 2025 security patches
+
+Notes:
+==============================
+- LineageOS-based source. Signed build.
+- Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
+- Kernel is already pre-rooted with KSU Next. Just install the KSU Next app.
+
+Device changes:
+==============================
+Add A650 firmware
+Add missing hidls to FCM
+Bring back QTI WFD
+Drop Mi Camera
+Drop XiaomiDolby
+Drop legacy ANT remnants
+Enable remaining elf checks & patch lib-imsvideocodec
+Migrate mount point creation out of Android.mk
+Update DRM shim & Enable few camera ELF checks
+checkout adreno blobs to LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+overlay: Config overlay to support 2 physical slots
+update gpu driver to adreno 797
+wfd: shim for 25Q2
+
+Notable ROM changes:
+==============================
+Adapt FaceUnlock to 16
+Disable some theme styles for A16
+Evolver: Allow user to provide keybox data
+Evolver: Bring back PIF
+Evolver: Drop some features for A16
+Evolver: Power menu: Drop On-The-Go Mode
+Evolver: Disable theme prefs
+GameSpace: Drop getIsContentSecure
+Initial Android 16 release
+LineageParts: Do not restore keydisabler state at boot
+Settings: Apply expressive design to evolver icon
+Settings: add back theming from dev settings into display settings
+Settings: fix StorageSelectionPreferenceController crash
+Settings: handle non-TextView layouts in storage spinner adapter
+SystemUIClocks: Update to panther A16 BP2A.250605.031.A2
+Update BCR to Version 1.78
+Updater: Fix background color
+Updater: Set User-Agent to EvoXUpdater/1.0
+bcr: add vendor/bcr to PRODUCT_SOONG_NAMESPACES
+fonts: Update from komodo BP2A.250605.031.A2
+services: WindowOrientationListener: bail out if rotation resolver service instance is null
