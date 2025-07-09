@@ -1,4 +1,4 @@
-This is Android 16 with June 2025 security patches
+This is Android 16 with July 2025 security patches
 
 Notes:
 ==============================
@@ -13,30 +13,49 @@ Notes:
 
 Device changes:
 ==============================
-Add BT LE audio props
-Fix per-app thermals
-Update blobs from diting OS2.0.3.0.VLFMIXM
+Commonize initial stereo master volume
+Increase initial stereo master volume
 
 Notable ROM changes:
 ==============================
-Bring back theme styles to Evolver
-Disable night light when showing udfps overlay
-InsetsStateController: Replace ArrayMap usage with Hashmap
-Media: Limit Max album artwork bitmap size
-Settings: Allow showing Ambient instead of fully waking
-Settings: Apply expressive design to evolver icon
-Settings: NfcAndPaymentFragmentController: fix crash
-Settings: handle non-TextView layouts in storage spinner adapter
-SettingsLib: Ensure divider is set before view is returned in onCreateView
-ShortcutService: stop spam
-SystemUI: Bring back Smartspace
-SystemUI: Fix smartspace layout
-SystemUI: Fix up large clock top margin with pixel-fw
-SystemUI: Improve ripple animation color
-SystemUI: Map more custom QS tiles
-SystemUI: add logic for mapping unknown tiles
-SystemUI: biometrics: Add missing calls to parent onFinishInflate
-SystemUI: disable media control guts marquee effect
-SystemUI: fix keyguard media section placement when split shade is used
-SystemUI: fix squeeze effect crash
-fwb: stop some more warning spam
+AuthRippleController: Prevent potential global overflow
+Evolver: Bring back more features from A15
+Evolver: Introduce Ongoing action chip changes
+Evolver: add option to disable quicksettings on keyguard
+Evolver: introduce compact progress indicator style
+HWUI: stop spam
+InternetTileNewImpl: fix secondary click
+LMOFreeform: adapt for A16
+LineageParts: Drop Navbar inverse setting
+Permission: force enable safety center
+Permission: set textAllCaps theme property to off by default
+PixelPropsUtils: Update fingerprints to July 2025 release
+SafetyCenter: Declare Advanced Protection related safety sources
+Settings: Add pocket lock toggle
+Settings: Fix duplicated baseband string on all devices
+Settings: Fix setting device name based on market name
+Settings: Migrate Touchpad visualizer to SwitchPreferenceCompat
+Settings: Prevent crash when a category service is empty or null
+Settings: Set device name from marketname if available
+Settings: Update ExtraDim slider to SliderPreference component
+Settings: Update gesture LabeledSeekBarPreference to SliderPreference component
+SettingsProvider: Resolve google gms configurator denials
+SystemUI: Adapt custom QS tiles to A16 category mapping
+SystemUI: Add Autobrightness tile
+SystemUI: Add VPNTethering tile
+SystemUI: Add private DNS QS tile to CustomTileConfig
+SystemUI: Avoid a NPE in QSAnimator
+SystemUI: Update track title and artist on metadata change
+SystemUI: apply light/dark theme to shade header elements
+VideoThumbnail: improve thumbnailTimeUs
+add null checks for PlaybackState in media progress methods
+backport back button fix from 16 QPR1 Beta 2.1
+fwb: add missing keyguard dependency
+fwb: disable VolumeControlProfile debug
+libstagefright: Conditionally disable thumbnail_block_model
+pixel-style: Drop PixelLauncherOverlayBlur
+raise RELEASE_PLATFORM_SECURITY_PATCH to 2025-07-05
+release: Enable android.app flags
+release: Enable more flag changes
+release: drop launcher blur
+sepolicy: Make secilc more verbose
