@@ -1,4 +1,4 @@
-This is initial Android 16 with June 2025 security patches
+This is initial Android 16 with July 2025 security patches
 
 Notes:
 ==============================
@@ -8,40 +8,50 @@ Notes:
 
 Device changes:
 ==============================
-Add A650 firmware
-Add missing hidls to FCM
-Bring back QTI WFD
-Drop Mi Camera
-Drop XiaomiDolby
-Drop legacy ANT remnants
-Enable remaining elf checks & patch lib-imsvideocodec
-Migrate mount point creation out of Android.mk
-Update DRM shim & Enable few camera ELF checks
-checkout adreno blobs to LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
-overlay: Config overlay to support 2 physical slots
-update gpu driver to adreno 797
-wfd: shim for 25Q2
+Fix USB tethering issue
 
 Notable ROM changes:
 ==============================
-Adapt FaceUnlock to 16
-Disable some theme styles for A16
-Evolver: Allow user to provide keybox data
-Evolver: Bring back PIF
-Evolver: Drop some features for A16
-Evolver: Power menu: Drop On-The-Go Mode
-Evolver: Disable theme prefs
-GameSpace: Drop getIsContentSecure
-Initial Android 16 release
-LineageParts: Do not restore keydisabler state at boot
-Settings: Apply expressive design to evolver icon
-Settings: add back theming from dev settings into display settings
-Settings: fix StorageSelectionPreferenceController crash
-Settings: handle non-TextView layouts in storage spinner adapter
-SystemUIClocks: Update to panther A16 BP2A.250605.031.A2
-Update BCR to Version 1.78
-Updater: Fix background color
-Updater: Set User-Agent to EvoXUpdater/1.0
-bcr: add vendor/bcr to PRODUCT_SOONG_NAMESPACES
-fonts: Update from komodo BP2A.250605.031.A2
-services: WindowOrientationListener: bail out if rotation resolver service instance is null
+AuthRippleController: Prevent potential global overflow
+Evolver: Bring back more features from A15
+Evolver: Introduce Ongoing action chip changes
+Evolver: add option to disable quicksettings on keyguard
+Evolver: introduce compact progress indicator style
+Fix video thumbnail issue
+HWUI: stop spam
+InternetTileNewImpl: fix secondary click
+LMOFreeform: adapt for A16
+LineageParts: Drop Navbar inverse setting
+Permission: force enable safety center
+Permission: set textAllCaps theme property to off by default
+PixelPropsUtils: Update fingerprints to July 2025 release
+SafetyCenter: Declare Advanced Protection related safety sources
+Settings: Add pocket lock toggle
+Settings: Fix duplicated baseband string on all devices
+Settings: Fix setting device name based on market name
+Settings: Migrate Touchpad visualizer to SwitchPreferenceCompat
+Settings: Prevent crash when a category service is empty or null
+Settings: Set device name from marketname if available
+Settings: Update ExtraDim slider to SliderPreference component
+Settings: Update gesture LabeledSeekBarPreference to SliderPreference component
+SettingsProvider: Resolve google gms configurator denials
+SystemUI: Adapt custom QS tiles to A16 category mapping
+SystemUI: Add Autobrightness tile
+SystemUI: Add VPNTethering tile
+SystemUI: Add private DNS QS tile to CustomTileConfig
+SystemUI: Avoid a NPE in QSAnimator
+SystemUI: Update track title and artist on metadata change
+SystemUI: apply light/dark theme to shade header elements
+SystemUI: blur rendering enhancements
+VideoThumbnail: improve thumbnailTimeUs
+add null checks for PlaybackState in media progress methods
+backport back button fix from 16 QPR1 Beta 2.1
+fwb: add missing keyguard dependency
+fwb: disable VolumeControlProfile debug
+libstagefright: Conditionally disable thumbnail_block_model
+pixel-style: Drop PixelLauncherOverlayBlur
+raise RELEASE_PLATFORM_SECURITY_PATCH to 2025-07-05
+release: Enable android.app flags
+release: Enable more flag changes
+release: drop launcher blur
+sepolicy: Make secilc more verbose
