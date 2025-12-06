@@ -1,11 +1,9 @@
-Long time no see, right ?
+Hello !
 
-This is Evolution X 11, Android 16 for Laral, finally !
+Final update before QPR1, just to have a checkpoint.
+Nothing really got added nor removed, just source changes.
 
-You can dirty flash it over the Evo11 test builds, if you installed them previously.
-Else, please use the recovery to sideload the update, and ignore the verification failed.
-
-A few improvements have been made smoothness-wise since the test builds.
+And obviously November updates.
 
 Enjoy and #KeepEvolving !
 
