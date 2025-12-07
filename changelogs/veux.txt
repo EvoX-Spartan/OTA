@@ -1,4 +1,18 @@
-• Initial A16 Release
-• Altho it can be dirty flashed, prefer clean flashing to avoid any weird bug
-• Fixed huge battery drain
-• Minor performance enhancements
+Hello !
+
+Final update before QPR1, just to have a checkpoint.
+Nothing really got added nor removed, just source changes.
+
+And obviously November security updates.
+
+Enjoy and #KeepEvolving !
+
+Onelots.
+
+Bugfixes :
+
+- bluetooth ringing when incoming call fixed
+apparently (never experienced the issue myself :)
+- android auto bug fixed
+
+- battery drain kinda fixed (improved at least)
