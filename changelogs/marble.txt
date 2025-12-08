@@ -2,8 +2,7 @@ This is Android 16 with November 2025 security patches
 
 Notes:
 ==============================
-- Install a HyperOS 2 FW according to your region (https://xmfirmwareupdater.com/firmware/marble)
-- LineageOS-based source. Signed build.
+- Install the latest HyperOS 2 FW according to your region (https://xmfirmwareupdater.com/firmware/marble)
 - Use OFRP-R11.1_7-Beta-marble.zip as recovery.
 - Always dirty flash at your own risk. If your device bootloops, revert to an older build that boots.
 - Install this (https://sourceforge.net/projects/evolution-x/files/marble/16/Evo-11.x-5.10.245-KSU-Next-v1.1.1-susfs-1.5.12.zip/download) for root.
@@ -12,14 +11,14 @@ Notes:
 
 Device changes:
 ==============================
-Include call speaker fix
+Switch to SwitchPreferenceCompat
+ThermalSettingsFragment: Defer applying divider
+Update some soong config variables to bool type
+devicesettings: Convert for M3E support
+parts: Apply Expressive theme
+sepolicy: Add binder call permissions for various HALs in system_app
 
 Notable ROM changes:
 ==============================
-Allow to override Mock Location restriction
-Redirect Google PermissionController intents to AOSP
-SystemUI: Hide data switch tile on non-voice capable devices
-SystemUI: Improving ScrimUtils performance
-SystemUI: TunerActivity: Remove icon toggles if not supported
-SystemUI: Use a16 wifi signal icon by default
-Update UI aspects to expressive design
+Update to Android 16 QPR1
+
