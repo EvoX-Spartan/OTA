@@ -23,6 +23,8 @@ Notable ROM changes:
 Evolver: Bring back Icon shape styles
 Evolver: Disable FP vibration toggles
 Evolver: Drop Velvet spoof toggle
+Evolver: Implement json-based game spoofing
+Merge December 2025 security patches
 Settings: Bring back GPSU entry from firmware version
 Settings: Pull navigation mode settings out
 Settings: Show MainlineModuleVersionPreference
@@ -32,6 +34,8 @@ apex: Declare included apps in com.google.android.permission.apex
 apex: Override PermissionController and SafetyCenterResources as well
 component-overrides: Enable GPSU
 extras: iconshapes: drop legacy iconshapes for now
+extras: Set default game props
+fixup! SystemUI: tuner: Convert for M3E support
 gms: Drop prebuilts of CredentialManager, DeviceIntelligenceNetworkPrebuilt and HealthIntelligencePrebuilt
 gms: Include ModuleMetadataGoogle (aka Google Play system update)
 overlay: Enable RBC Setting for all
@@ -39,5 +43,8 @@ pixel-style: Enable GPSU support
 pixel-style: Overlay launcher package name in System UI
 pixel-style: Remove evendimmer in favour of RBC
 pixel-style: bp4a overlay updates
+release: Bump Security String to 2025-12-01
 release: enable extendible theme manager
 release: Enable psb reskin
+version: Uprev to 11.5.1
+wm: Allow disabling window blurs by default
