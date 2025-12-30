@@ -1,4 +1,4 @@
-This is initial Android 16 with November 2025 security patches
+This is initial Android 16 with December 2025 security patches
 
 Notes:
 ==============================
@@ -10,27 +10,13 @@ Notes:
 
 Device changes:
 ==============================
-None
+Remove vendor/lineage device framework matrix inclusion
+Switch to SwitchPreferenceCompat
+Update some soong config variables to bool type
+parts: Apply Expressive theme
+parts: SettingsFragment: Defer applying divider
+sepolicy: Drop duplicate genfs_contexts entries
 
 Notable ROM changes:
 ==============================
-Evolver: Add sparkle pulse renderer style
-Evolver: Add support for custom fonts
-Evolver: Expose floating rotation button toggle
-Evolver: Remove preferences when not supported
-Introduce LMOSystemUIClock styles
-Merge November 2025 security patches
-Remove built-in keybox overlay
-Revert to previous refresh rate manager implementation
-SystemUI: Do not change compose panel anchor when shade blur is disabled
-SystemUI: Fix keyguard transition race conditions
-SystemUI: Prevent NPE when header view not ready
-SystemUI: Prevent ShadeListBuilder illegal state on notification dump
-build: Remove su
-config: Build LMO systemui clock plugin
-config: Update pihooks fp to A16 QPR2 Beta 3.2
-extras: Add IBM Plex Sans font
-extras: Add new oplus fp icon
-extras: UDFPS: import Keqing's icon and animation
-extras: Update configuration for sony sketch font
-services: Fixing fullscreen feature
+Initial Android 16 QPR1 release for Mi 11
