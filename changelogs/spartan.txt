@@ -10,41 +10,18 @@ Notes:
 
 Device changes:
 ==============================
-- Update to Evolution X 11.6
+- Initial Realme parts support
 
 Notable ROM changes:
 ==============================
-Evolver: Add back QS Header Image customization
-Evolver: Add back Sensor block per-package switch
-Evolver: Add monet settings illustration
-Evolver: Add nothing os charging animation
-Evolver: Add proper toggle for smartspace
-Evolver: Allow tuning extra padding for statusbar layout
-Evolver: Initial battery styles
-Evolver: Make sensor block package list configurable
-Evolver: Remove carrier name setting if not supported
-Fix NullPointerException in PackageManagerService
-Reduce unnecessary calls to getLatestVsyncEventData
-Remove OmniJaws lockscreen and QS tile weather
-Settings: Add Device codename to Firmware version window
-SystemUI: Fix keyguard back button background
-SystemUI: Fix Smartspace for QPR1
-SystemUI: Implement Reverse-engineered Smartspace
-SystemUI: smartspace: fix duplicate date view on lockscreen
-Update translations
-aconfig: Disable notification_background_tint_optimization
-center-cropping media bitmaps to improve quality
-config: Build BatteryStatsViewer
-extras: Update google sans flex fonts
-fixing configuration controller crash
-fixing contacts apps crash 
-gms: Add nowplaying.xml sysconfig file
-gms: CustomizationBundlePrebuilt -> CustomizationBundlePrebuiltFullVersion
-gms: Drop DeviceIntelligenceNetworkPrebuilt and HealthIntelligencePrebuilt
-preventing media album bitmaps from impacting performance
-pixel-style: Use google sans flex for lockscreen clock
-pixel-style: fixup! use gesture navigation by default
-pixel-style: remove Pixel tethering overlay
-recovery: Fix scrolling when touch is rotated
-release: Bump Security String to 2026-01-01
-version: Uprev to 11.6
+Add Fix Bluetooth status display issue after power cycle
+Fixes an issue where the lockscreen clock would display the incorrect time after a SystemUI restart or hot reload
+Remove Duplicate WIFI_DISPLAY permission entry
+Settings: Implement localepicker from SettingsGoogle
+SettingsLib: Don't show system overlays on apps list
+SystemUI: Align Smartspace DataProviders with updated BcSmartspaceDataPlugin API
+SystemUI: re enable KeyguardSliceProvider
+device_config: Update smartspace flags to QPR1
+extras: Set preference-ktx minSdkVersion to 23
+gms: Bring back DeviceIntelligenceNetworkPrebuilt
+version: Downrev to 11.5.2
