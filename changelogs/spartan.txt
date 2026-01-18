@@ -1,4 +1,7 @@
-This is Android 16 QPR1 with January 2026 security patches
+This is Android 16 QPR2 with January 2026 security patches
+
+CAUTION!!! DIRTY FLASH FROM QPR0/QPR1 WILL NOT WORK
+MAKE A BACKUP NOW IF YOU WANT TO MOVE TO THIS BUILD
 
 Notes:
 ==============================
@@ -10,18 +13,67 @@ Notes:
 
 Device changes:
 ==============================
-- Initial Realme parts support
+- Update Dolby Atmos UI
 
 Notable ROM changes:
 ==============================
-Add Fix Bluetooth status display issue after power cycle
-Fixes an issue where the lockscreen clock would display the incorrect time after a SystemUI restart or hot reload
-Remove Duplicate WIFI_DISPLAY permission entry
-Settings: Implement localepicker from SettingsGoogle
-SettingsLib: Don't show system overlays on apps list
-SystemUI: Align Smartspace DataProviders with updated BcSmartspaceDataPlugin API
-SystemUI: re enable KeyguardSliceProvider
-device_config: Update smartspace flags to QPR1
-extras: Set preference-ktx minSdkVersion to 23
-gms: Bring back DeviceIntelligenceNetworkPrebuilt
-version: Downrev to 11.5.2
+CarrierConfigManager: Gracefully handle missing CarrierConfigLoader
+Evolver: Bring back QS tile haptics toggle
+Evolver: Bring back toggle for secure tiles on keyguard
+Evolver: Disable media squiggle toggle
+Evolver: Disable screen off animation toggle
+Evolver: Disable status bar brightness control
+PixelPropsUtils: Update fingerprints to January 2026 release
+Reduce thread scheduling overhead
+SafetyCenterUtils: This function is only used by tests
+SceneTransitionLayoutState: downgrade log spam to debug
+Settings: Add doze brightness customization
+Settings: Disable Bluetooth and Wi-Fi timeout features
+Settings: Disable hide arrow and haptic feedback for back gesture toggles
+Settings: Enable glanceble hub for all
+Settings: Fix updater crash on WiFI only devices
+Settings: Force disable top level support preference
+SystemUI: Blur the background of SysUI dialogs
+SystemUI: Fix DT2S gesture on lockscreen body with SceneContainer enabled
+SystemUI: Fix default font feature on lockscreen
+SystemUI: Fix ringer tile height and add DND toggle support
+SystemUI: Handle missing telephony service in DeviceBasedSatelliteRepository
+SystemUI: Require unlocking to use sensitive QS tiles
+SystemUI: Respect global setting for SysUI dialog blur
+SystemUI: SliderHaptics: Cache composed effects for primitives
+SystemUI: SliderHaptics: Clamp the pre-power sum in scaleOnDragTexture
+SystemUI: SliderHaptics: Tune the primitives
+SystemUI: Stop log spam for no-op magnetic row state changes
+SystemUI: Support legacy vibrator haptics for slider haptics as well
+SystemUI: VolumeDialog: Fix layout issues with left gravity
+SystemUI: drawable: Resize some system status icons
+SystemUI: force enable clock fidget animation
+SystemUI: make flashlight slider use primitive haptics if supported
+SystemUI: prevent crash on empty dozing indication
+aconfig: Disable notification_background_tint_optimization
+aconfig: Enable location indicator
+aconfig: enable media_controls_in_compose
+apex: update prebuilts to bp4a
+config: Move all properties to product
+config: Update PIF to Android 16 QPR3 Beta 2
+config: tablet: Disable desktop windowing mode
+debuggerd: Set correct version for tombstone
+device_config: Add back the long lost "Enter to Open app from search" feature
+device_config: Enable more smartspace features
+device_config: cleanup and update from 16 QPR2
+disable redundant indexing of WidgetsOnLockscreenFragment contents
+extras: Enable SystemUIClocks-Weather
+extras: SystemUIClocks: Update to mustang BP4A.251205.006
+fix an upstream infinite loop bug in ProtoFieldFilter.skipBytes()
+gms: QPR2 update (mustang BP4A.251205.006)
+l2cap: Use basic mode for edge case devices
+overlay: Convert Settings overlay to rro
+overlay: Enable Lockscreen widgets settings on mobile
+overlay: Enable UMO on the glanceable hub when media is playing for mobile also
+pixel-style: Enable Glancable Hub
+pixel-style: Enable locale picker enhancement and more
+pixel-style: overlay: Build overlays for WallpaperPicker2 (fixes wallpaper preview corners)
+release/aconfig: enable two SurfaceFlinger VRR flags
+release: Disable navbar_flip_order_option for now
+sepolicy: Allow systemui access to bluetooth_lea_prop
+sepolicy: Fix anykernel flashing on recovery
